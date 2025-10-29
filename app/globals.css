@@ -2,10 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-/* ✅ required for Solana wallet modal UI */
+/* required for Solana wallet modal UI */
 @import "@solana/wallet-adapter-react-ui/styles.css";
 
-/* ==== your custom theme setup ==== */
 :root {
   --background: #ffffff;
   --foreground: #171717;

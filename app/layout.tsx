@@ -1,19 +1,12 @@
 "use client";
 
-import "./globals.css";
+import "./globals.css"; // <- keep ONLY this CSS import
 import React, { ReactNode } from "react";
 import Navbar from "./components/navbar";
-import { WalletAdapterNetwork } from "@solana/wallet-adapter-base";
-import {
-  ConnectionProvider,
-  WalletProvider,
-} from "@solana/wallet-adapter-react";
+
+import { ConnectionProvider, WalletProvider } from "@solana/wallet-adapter-react";
 import { WalletModalProvider } from "@solana/wallet-adapter-react-ui";
-import {
-  PhantomWalletAdapter,
-  SolflareWalletAdapter,
-} from "@solana/wallet-adapter-wallets";
-import "@solana/wallet-adapter-react-ui/styles.css";
+import { PhantomWalletAdapter, SolflareWalletAdapter } from "@solana/wallet-adapter-wallets";
 
 const endpoint = "https://api.mainnet-beta.solana.com";
 const wallets = [new PhantomWalletAdapter(), new SolflareWalletAdapter()];
